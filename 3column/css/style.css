@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  padding-top: 170px;
+}
+
+@media (max-width: 960px) {
+  body {
+    padding: 90px 0 90px 0;
+  }
+}
+
+h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.6rem;
+}
+
+p, a {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 920px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 326px;
+  }
+}
+
+.container > * {
+  height: 500px;
+  padding: 48px 51px 50px 46px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 3fr 1fr;
+      grid-template-rows: 1fr 1fr 3fr 1fr;
+}
+
+.container > * > .car-icon {
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.container > * > h1 {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  color: #f2f2f2;
+}
+
+.container > * > p {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.container > * .cta {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  border-radius: 22px;
+  padding: 10px 0;
+  max-width: 148px;
+  max-height: 48px;
+  text-align: center;
+  text-justify: auto;
+}
+
+@media (max-width: 960px) {
+  .container > * {
+    max-height: 442px;
+  }
+}
+
+.container .sedans {
+  background-color: #e38826;
+}
+
+.container .sedans .cta {
+  color: #e38826;
+}
+
+.container .sedans .cta:active {
+  background-color: #e38826;
+  color: #f2f2f2;
+}
+
+.container .suvs {
+  background-color: #006970;
+}
+
+.container .suvs .cta {
+  color: #006970;
+}
+
+.container .suvs .cta:active {
+  background-color: #006970;
+  color: #f2f2f2;
+}
+
+.container .luxury {
+  background-color: #004241;
+}
+
+.container .luxury .cta {
+  color: #004241;
+}
+
+.container .luxury .cta:active {
+  background-color: #004241;
+  color: #f2f2f2;
+}
